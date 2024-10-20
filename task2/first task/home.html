@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: rgb(32, 190, 156);
+            padding: 10px;
+            text-align: center;
+            
+        }
+        header img {
+            max-width: 200px;
+            height: auto;
+        }
+       
+        nav {
+            background-color: #c0c0c0;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 10px;
+            color: rgb(172, 22, 22);
+            text-decoration: none;
+            font-weight: bold;
+        }
+       
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .left-column, .middle-column, .right-column {
+            width: 30%;
+        }
+    
+        .login-box, .my-pages, .iframe-video {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 2px solid black;
+            background-color: #f4f4f4;
+        }
+        .login-box input {
+            display: block;
+            margin-bottom: 10px;
+            width: 100%;
+            padding: 5px;
+        }
+        
+        .profile-box {
+            background-color: #E6E6FA;
+            padding: 10px;
+        }
+        
+        .personal-photo {
+            border: 1px solid #000;
+            text-align: center;
+            padding: 10px;
+            background-color: #f4f4f4;
+        }
+        
+        footer {
+            background-color:  rgb(29, 179, 146);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        
+        table {
+            width: 100%;
+        }
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+
+<header>
+    <img src="images\logo.png" alt="Header image" width="500" hight="500" decoding="async">
+
+</header>
+
+
+<nav>
+        <a href="home.html">Home</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="about.html">About Us</a>
+    
+</nav>
+
+
+<div class="container">
+    <!-- Left Column -->
+    <div class="left-column">
+        <div class="login-box">
+            <h3>Login</h3>
+            <input type="text" placeholder="Username" required>
+            <input type="password" placeholder="Password" required>
+            <button>Login</button>
+        </div>
+
+        <div class="my-pages">
+            <h3>My Pages Online</h3>
+            <a href="https://www.facebook.com" target="_blank">Facebook</a><br>
+            <a href="https://www.twitter.com" target="_blank">Twitter</a>
+        </div>
+
+        <div class="iframe-video">
+            <h3>Iframe Video</h3>
+            <iframe width="200" height="150" src="https://www.youtube.com/embed/dQw4w9WgXcQ" ></iframe>
+        </div>
+    </div>
+
+    <!-- Middle Column -->
+    <div class="middle-column">
+        <div class="profile-box">
+            <h2>My Profile</h2>
+            <ul>
+                <li><strong>Name:</strong> Toqa</li>
+                <li><strong>Age:</strong> 20</li>
+                <li><strong>Address:</strong> Nasr city</li>
+                <li><strong>Phone:</strong> 01012113122</li>
+                <li><strong>Faculty:</strong> <a href="http://education.fcih.helwan.edu.eg/portal/student/dashboard">Computer Science</a></li>
+                <li><strong>Hobbies:</strong>
+                    <ol>
+                        <li>Programming</li>
+                        <li>Reading</li>
+                        <li>Swimming</li>
+                    </ol>
+                </li>
+                <li><strong>Mail:</strong> <a href="mailto:john.doe@example.com">Your mail</a></li>
+            </ul>
+              
+        </div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="right-column">
+        <div class="personal-photo">
+            <h3>Personal Photo</h3>
+            <img src="images/logo.avif" alt="Personal Photo" width="150" height="150" decoding="async">
+        </div>
+        <div class="news">
+            <h3>News</h3>
+            <p> latest news here...</p>
+        </div>
+    </div>
+</div>
+
+
+<footer>
+    <p><a href="#top">Top of page</a></p>
+    <p>Copyright &copy; are reserved to ITI</p>
+</footer>
+
+</body>
+</html>

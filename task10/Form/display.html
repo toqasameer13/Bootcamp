@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registered Information</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Your Registered Information</h1>
+    <div class="info-container">
+        <p><strong>Name:</strong> <span id="displayName"></span></p>
+        <p><strong>Email:</strong> <span id="displayEmail"></span></p>
+        <p><strong>Job Title:</strong> <span id="displayJob"></span></p>
+        <p><strong>Mobile:</strong> <span id="displayMobile"></span></p>
+        <p><strong>Address:</strong> <span id="displayAddress"></span></p>
+        <p><strong>Gender:</strong> <span id="displayGender"></span></p>
+    </div>
+
+    <script>
+        document.getElementById('displayName').textContent = localStorage.getItem('name');
+        document.getElementById('displayEmail').textContent = localStorage.getItem('email');
+        document.getElementById('displayJob').textContent = localStorage.getItem('job');
+        document.getElementById('displayMobile').textContent = localStorage.getItem('mobile');
+        document.getElementById('displayAddress').textContent = localStorage.getItem('address');
+        document.getElementById('displayGender').textContent = localStorage.getItem('gender');
+    </script>
+</body>
+</html>

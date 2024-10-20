@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print Settings</title>
+    <script src="script.js"></script>
+    <style>
+        #print-content {
+            width: 100%;
+            margin: 20px 0;
+            border: 1px solid #000;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Select Print Settings</h2>
+
+<form id="print-settings">
+    <label for="orientation">Orientation:</label>
+    <select id="orientation">
+        <option value="portrait">Portrait</option>
+        <option value="landscape">Landscape</option>
+    </select>
+
+    <label for="preview">Preview:</label>
+    <select id="preview">
+        <option value="screen">Screen</option>
+        <option value="print">Print</option>
+    </select>
+
+    <label for="size">Size:</label>
+    <select id="size">
+        <option value="A4">A4</option>
+        <option value="A5">A5</option>
+        <option value="legal">Legal</option>
+        <option value="letter">Letter</option>
+        <option value="A1">A1</option>
+        <option value="A2">A2</option>
+        <option value="A3">A3</option>
+    </select>
+
+    <label for="color">Color:</label>
+    <select id="color">
+        <option value="mono">White and Black (Mono)</option>
+        <option value="color">Color</option>
+    </select>
+
+    <button type="button" onclick="updatePrintPreview()">Update Print Preview</button>
+</form>
+
+<div id="print-content">
+    <h3>Print Preview</h3>
+    <p>This is a sample content that will be printed.</p>
+</div>
+
+</body>
+</html>

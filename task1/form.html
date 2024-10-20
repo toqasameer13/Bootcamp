@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+</head>
+
+
+<body>
+
+    <form action="send.php" method="POST">
+        <div>
+            <label for="firstname">first name</label>
+            <input type="text" name="firstname" required>
+            <div>
+                <label for="lastname">last name</label>
+                <input type="text" name="last name" placeholder="write your last name here" required>
+            </div>
+            <div>
+                <label for="phonenumber">phone number</label>
+                <input type="text" name="phonenumber" pattern="\d{11}" placeholder="(11 digits)" required>
+            </div>
+
+            <button type="submit">Submit</button>
+
+            <button type="reset">Clear</button>
+
+</body>
+
+</html>

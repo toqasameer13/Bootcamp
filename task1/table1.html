@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 4 Table</title>
+    <style>
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+      th,
+      td {
+        padding: 10px;
+        text-align: center;
+      }
+      th {
+        background-color: #f2f2f2;
+      }
+      .coordinator,
+      .secretary {
+        background-color: #d0f0c0;
+      }
+      .secretary.red {
+        background-color: #f4cccc;
+      }
+      .region-merged {
+        background-color: #f4cccc;
+      }
+      .wide {
+        width: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>Region</th>
+        <th>Manager</th>
+        <th class="coordinator">Coordinator</th>
+        <th>Local Rep</th>
+        <th>Secretary</th>
+      </tr>
+      <tr>
+        <td>North</td>
+        <td>Adam</td>
+        <td class="coordinator">Beth</td>
+        <td>Callum</td>
+        <td>Diane</td>
+      </tr>
+      <tr>
+        <td>South West</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Dodie</td>
+      </tr>
+      <tr>
+        <td class="region-merged" rowspan="2">
+          South East Upper<br />South East Lower
+        </td>
+        <td class="region-merged" rowspan="2"></td>
+        <td class="wide" rowspan="2">Annie</td>
+        <td></td>
+        <td class="secretary red">Dylan</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>Dahlia</td>
+      </tr>
+      <tr>
+        <td>East</td>
+        <td>Ash</td>
+        <td class="coordinator">Bill</td>
+        <td>Cecilia</td>
+        <td>Dave</td>
+      </tr>
+      <tr>
+        <td>West</td>
+        <td>Art</td>
+        <td class="coordinator">Bruce</td>
+        <td>Colin</td>
+        <td>Danny</td>
+      </tr>
+    </table>
+  </body>
+</html>

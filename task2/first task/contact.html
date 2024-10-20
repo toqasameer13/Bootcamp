@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSS - Mega Space Services</title>
+</head>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <form action="/submit" method="POST">
+        
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        
+        
+        <label for="severity">Severity:</label>
+        <select id="severity" name="severity">
+            <optgroup label="Severity">
+                <option value="low">low</option>
+                <option value="medium">medium</option>
+                <option value="severe">severe</option>
+            </optgroup>
+        </select>
+
+        
+        <label for="type">Type of message:</label>
+        <select id="type" name="type">
+            <optgroup label="Message Type">
+                <option value="normal">normal</option>
+                <option value="urgent">urgent</option>
+            </optgroup>
+        </select>
+
+        
+        <label for="range">People range:</label>
+        <input type="range" id="range" name="people" min="1" max="5" value="3" >
+        
+        
+        
+        <label for="time">submission time:</label>
+        <input type="time" id="time" name="time"><br></br>
+
+        <label for="message">Your message:</label>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea>
+
+        
+        <input type="submit" value="Send">
+        <input type="reset" value="Reset">
+    </form>
+</section>
